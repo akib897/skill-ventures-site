@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Skill Ventures — Idea 1</title><link rel="icon" href="./uploads/_skill.ventures/public_html/favicon.ico" sizes="48x48" type="image/x-icon"><style>
+@font-face{font-family:Audiowide;font-style:normal;font-display:swap;font-weight:400;src:url(./uploads/_skill.ventures/public_html/_next/static/media/audiowide-latin-ext-400-normal.707dfaa2.woff2)format("woff2");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Audiowide;font-style:normal;font-display:swap;font-weight:400;src:url(./uploads/_skill.ventures/public_html/_next/static/media/audiowide-latin-400-normal.e0236b1a.woff2)format("woff2")}
+:root{--bg:#401444;--bg-deep:#2b0d2e;--bg-lift:#551b5e;--line:rgba(249,250,251,.28);--ink:#fff;--soft:#e3d3e6;--accent:#f2c6ff}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Audiowide,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.4}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul,ol{margin:0;padding:0}
+ul,ol{list-style:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.ph{display:flex;flex-direction:column;gap:6px;align-items:center;justify-content:center;text-align:center;width:100%;height:100%;min-height:160px;border:1px dashed var(--line);border-radius:10px;color:var(--soft);font-size:14px;padding:16px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 12px,transparent 12px 24px)}
+.ph-s{font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+/* logo strip */
+.strip{overflow:hidden;display:flex;padding:72px 0;border-top:1px solid var(--line)}
+.strip-row{display:flex;flex-shrink:0;align-items:center;animation:mq 22s linear infinite}
+.strip-row img{width:200px;height:120px;object-fit:contain;padding-right:80px}
+@keyframes mq{to{transform:translateX(-100%)}}
+/* footer */
+.foot{background:linear-gradient(to bottom,var(--bg-lift),var(--bg));padding:56px 0 64px}
+.foot-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:40px 32px;align-items:start}
+.foot-logo{width:150px}
+.foot h2{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin-bottom:14px}
+.foot-social{display:flex;gap:14px}
+.foot-social a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%}
+.foot-social a:hover{background:rgba(255,255,255,.1)}
+.foot-social svg{width:22px;height:22px}
+.foot-loc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:24px;grid-column:span 2}
+.foot-loc h3{font-size:16px;margin-bottom:6px}
+.foot-loc p{font-size:12.5px;color:var(--soft);line-height:1.6}
+@media (max-width:640px){.foot-loc{grid-column:auto}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px;padding-bottom:22px;flex-wrap:wrap}
+.bar img{width:112px}
+.bar p{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.note{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);text-align:center;padding:18px 24px 40px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:14px;color:var(--bg);background:#fff;border:1px solid #fff;border-radius:999px;padding:12px 22px;min-height:44px;cursor:pointer}
+.btn.ghost{background:transparent;color:#fff;border-color:var(--line)}
+.btn.ghost:hover{border-color:#fff}
+
+.j{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:center;min-height:600px;padding-top:16px;padding-bottom:24px}
+.j h1{font-size:clamp(26px,3.4vw,44px);text-transform:uppercase;font-weight:400;line-height:1.1;margin:10px 0 34px}
+.j-steps{position:relative;min-height:250px}
+.j-step{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;gap:10px;opacity:0;transform:translateY(16px);pointer-events:none;transition:opacity .45s,transform .45s}
+.j-step.on{opacity:1;transform:none;pointer-events:auto}
+.j-num{font-size:12px;letter-spacing:.14em;color:var(--soft)}
+.j-step h2{font-size:clamp(24px,2.8vw,38px);text-transform:uppercase;font-weight:400;line-height:1.05}
+.j-line{font-size:18px}
+.j-svc{font-size:13px;color:var(--soft);margin-bottom:10px}
+.j-stage{position:relative;height:520px;border:1px solid var(--line);border-radius:16px;background:var(--bg-deep);overflow:hidden;perspective:1100px}
+.floor{position:absolute;left:-20%;right:-20%;bottom:-40%;height:80%;background:repeating-linear-gradient(0deg,rgba(242,198,255,.35) 0 1px,transparent 1px 44px),repeating-linear-gradient(90deg,rgba(242,198,255,.35) 0 1px,transparent 1px 44px);transform:rotateX(74deg);opacity:0;transition:opacity .6s}
+.asset{position:absolute;left:50%;top:50%;width:68%;aspect-ratio:3/2;transform:translate(-50%,-50%);transition:transform .9s cubic-bezier(.2,.7,.2,1),width .9s cubic-bezier(.2,.7,.2,1),left .9s,top .9s,border-radius .6s,box-shadow .6s;border-radius:10px;overflow:hidden;z-index:3;transform-style:preserve-3d}
+.asset img{width:100%;height:100%;object-fit:cover;transition:filter .9s}
+.tag{position:absolute;left:18px;top:18px;z-index:6;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:7px 12px;background:rgba(43,13,46,.7)}
+.lb{position:absolute;left:0;right:0;height:0;background:#000;z-index:4;transition:height .6s}
+.lb.t{top:0}.lb.b{bottom:0}
+.play{position:absolute;left:8%;right:8%;bottom:26px;height:3px;background:rgba(255,255,255,.25);z-index:5;opacity:0;transition:opacity .4s}
+.play i{display:block;height:100%;width:0;background:#fff}
+.wire{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(242,198,255,.55) 0 1px,transparent 1px 22px),repeating-linear-gradient(90deg,rgba(242,198,255,.55) 0 1px,transparent 1px 22px);opacity:0;transition:opacity .6s;mix-blend-mode:screen}
+.fx{position:absolute;inset:-30%;background:conic-gradient(from 0deg,transparent 0 12%,rgba(255,120,220,.55) 16%,transparent 22% 48%,rgba(120,220,255,.5) 53%,transparent 60% 82%,rgba(255,220,140,.45) 86%,transparent 92%);mix-blend-mode:screen;opacity:0;transition:opacity .6s;z-index:5;pointer-events:none}
+.ui{position:absolute;inset:44px 40px;border:1px solid var(--line);border-radius:12px;background:#1d0920;opacity:0;transform:scale(.96);transition:opacity .6s,transform .6s;z-index:2}
+.ui-top{display:flex;gap:6px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.ui-top i{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.35)}
+.app-side{position:absolute;left:0;top:34px;bottom:0;width:22%;border-right:1px solid var(--line);padding:18px 14px;display:flex;flex-direction:column;gap:12px}
+.app-side i,.app-rows i,.post-lines i{display:block;height:8px;border-radius:4px;background:rgba(255,255,255,.18)}
+.app-side i:nth-child(1){width:70%;background:rgba(255,255,255,.5)}.app-side i:nth-child(2){width:90%}.app-side i:nth-child(3){width:60%}.app-side i:nth-child(4){width:80%}
+.app-rows{position:absolute;left:27%;right:5%;bottom:26px;display:flex;align-items:flex-end;gap:10px;height:28%}
+.app-rows b{flex:1;background:var(--accent);border-radius:4px 4px 0 0;height:20%;opacity:.85;transition:height .9s .3s}
+.post-head{display:flex;align-items:center;gap:10px;padding:14px}
+.post-head b{width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.5)}
+.post-lines{flex:1;display:flex;flex-direction:column;gap:6px}
+.post-lines i:nth-child(1){width:38%;background:rgba(255,255,255,.5)}.post-lines i:nth-child(2){width:24%}
+.chart{position:absolute;left:6%;right:6%;bottom:18px;height:22%}
+.chart polyline{fill:none;stroke:var(--accent);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:700;stroke-dashoffset:700;transition:stroke-dashoffset 1.6s .4s}
+.ui.post{inset:28px 26%}
+/* stages */
+[data-s="0"] .asset img{filter:grayscale(.95) contrast(.72) brightness(.78)}
+[data-s="2"] .lb{height:13%}[data-s="2"] .play{opacity:1}[data-s="2"] .play i{animation:pl 3.4s linear forwards}
+[data-s="2"] .asset{width:100%;border-radius:0}[data-s="2"] .asset img{animation:kb 3.6s ease-in-out forwards}
+@keyframes pl{to{width:100%}}@keyframes kb{from{transform:scale(1.02) translate(1%,0)}to{transform:scale(1.18) translate(-3%,-2%)}}
+[data-s="3"] .fx{opacity:1;animation:spin 5s linear infinite}[data-s="3"] .asset{box-shadow:0 0 60px rgba(255,120,220,.55),0 0 140px rgba(120,220,255,.35)}[data-s="3"] .asset img{filter:saturate(1.5) contrast(1.15)}
+@keyframes spin{to{transform:rotate(360deg)}}
+[data-s="4"] .asset{transform:translate(-50%,-56%) rotateY(-30deg) rotateX(12deg);box-shadow:40px 50px 80px rgba(0,0,0,.5)}[data-s="4"] .wire{opacity:1}[data-s="4"] .floor{opacity:1}
+[data-s="5"] .ui.app{opacity:1;transform:none}[data-s="5"] .asset{width:40%;left:52%;top:40%}[data-s="5"] .app-rows b:nth-child(1){height:45%}[data-s="5"] .app-rows b:nth-child(2){height:70%}[data-s="5"] .app-rows b:nth-child(3){height:38%}[data-s="5"] .app-rows b:nth-child(4){height:88%}[data-s="5"] .app-rows b:nth-child(5){height:60%}
+[data-s="6"] .ui.post{opacity:1;transform:none}[data-s="6"] .asset{width:44%;top:44%;border-radius:4px}[data-s="6"] .chart polyline{stroke-dashoffset:0}
+.j-rail{display:flex;gap:6px;padding:8px 24px 0;justify-content:center;flex-wrap:wrap}
+.j-dot{font:inherit;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);background:transparent;border:0;border-top:2px solid var(--line);padding:12px 12px 10px;min-height:44px;cursor:pointer;transition:color .2s,border-color .2s}
+.j-dot.on{color:#fff;border-top-color:#fff}
+@media (max-width:860px){.j{grid-template-columns:1fr;gap:20px}.j-stage{height:320px;order:-1}.j-steps{min-height:230px}.j h1{margin-bottom:16px}.ui{inset:20px 14px}.ui.post{inset:14px 16%}}
+</style></head><body><header class="wrap bar"><img src="./uploads/_skill.ventures/public_html/logo.png" alt="Skill Ventures"><p>Your global partner in a dynamic digital landscape.</p></header><main><div class="wrap j"><div><p class="eyebrow">One asset. Six ventures.</p><h1>Watch one shot travel through the group.</h1><div class="j-steps"><div class="j-step" data-i="0"><p class="j-num">00 / 06</p><h2>Raw</h2><p class="j-line">It starts with one raw shot.</p><p class="j-svc">Follow it through the group.</p></div><div class="j-step" data-i="1"><p class="j-num">01 / 06</p><h2>Skill Graphics</h2><p class="j-line">Retouched and colour-corrected.</p><p class="j-svc">Image Editing · Video Editing</p><a class="btn" href="https://skillgraphics.biz/" target="_blank" rel="noopener noreferrer">Enter Skill Graphics <span aria-hidden="true">→</span></a></div><div class="j-step" data-i="2"><p class="j-num">02 / 06</p><h2>Skill Videos</h2><p class="j-line">Cut into a film.</p><p class="j-svc">Video Editing · Post-Production</p><a class="btn" href="https://skillvideos.biz/" target="_blank" rel="noopener noreferrer">Enter Skill Videos <span aria-hidden="true">→</span></a></div><div class="j-step" data-i="3"><p class="j-num">03 / 06</p><h2>MVRK Studios</h2><p class="j-line">Given effects no camera can capture.</p><p class="j-svc">Visual Effects · Motion Graphics</p><a class="btn" href="https://mvrk.tv/" target="_blank" rel="noopener noreferrer">Enter MVRK Studios <span aria-hidden="true">→</span></a></div><div class="j-step" data-i="4"><p class="j-num">04 / 06</p><h2>AULEEK</h2><p class="j-line">Rebuilt as a 3D visual.</p><p class="j-svc">Architectural &amp; Product Visualization · Data Analytics &amp; Visualization</p><a class="btn" href="https://auleek.com/" target="_blank" rel="noopener noreferrer">Enter AULEEK <span aria-hidden="true">→</span></a></div><div class="j-step" data-i="5"><p class="j-num">05 / 06</p><h2>V2 Technologies</h2><p class="j-line">Wired into software and data.</p><p class="j-svc">Customized Software Development · Data Analytics &amp; Visualization</p><a class="btn" href="https://v2.ltd/" target="_blank" rel="noopener noreferrer">Enter V2 Technologies <span aria-hidden="true">→</span></a></div><div class="j-step" data-i="6"><p class="j-num">06 / 06</p><h2>Plus Online Marketing</h2><p class="j-line">Put in front of the right audience.</p><p class="j-svc">Search Engine Optimization · Content Marketing · Website Design &amp; Development · Performance Marketing</p><a class="btn" href="https://plusonlinemarketing.com/" target="_blank" rel="noopener noreferrer">Enter Plus Online Marketing <span aria-hidden="true">→</span></a></div></div></div>
+<div class="j-stage" data-s="0" aria-hidden="true"><span class="tag">Raw shot</span><div class="floor"></div>
+<div class="ui app"><div class="ui-top"><i></i><i></i><i></i></div><div class="app-side"><i></i><i></i><i></i><i></i></div><div class="app-rows"><b></b><b></b><b></b><b></b><b></b></div></div>
+<div class="ui post"><div class="post-head"><b></b><div class="post-lines"><i></i><i></i></div></div><svg class="chart" viewBox="0 0 300 60" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,54 40,48 80,50 120,36 160,38 200,22 240,18 300,4"/></svg></div>
+<div class="asset"><img src="./uploads/_skill.ventures/public_html/brands/auleek/auleek-1.png" alt=""><div class="wire"></div><span class="lb t"></span><span class="lb b"></span><span class="play"><i></i></span></div><div class="fx"></div></div></div>
+<ol class="j-rail"><li><button type="button" class="j-dot" data-i="0" aria-label="Raw"><span>Raw</span></button></li><li><button type="button" class="j-dot" data-i="1" aria-label="Skill Graphics"><span>Skill Graphics</span></button></li><li><button type="button" class="j-dot" data-i="2" aria-label="Skill Videos"><span>Skill Videos</span></button></li><li><button type="button" class="j-dot" data-i="3" aria-label="MVRK Studios"><span>MVRK Studios</span></button></li><li><button type="button" class="j-dot" data-i="4" aria-label="AULEEK"><span>AULEEK</span></button></li><li><button type="button" class="j-dot" data-i="5" aria-label="V2 Technologies"><span>V2 Technologies</span></button></li><li><button type="button" class="j-dot" data-i="6" aria-label="Plus Online Marketing"><span>Plus Online Marketing</span></button></li></ol></main><p class="note">Preview with stand-in visuals. The final version would use one custom-produced sequence and advance as the visitor scrolls.</p><footer class="foot"><div class="wrap foot-in"><img class="foot-logo" src="./uploads/_skill.ventures/public_html/logo.png" alt="Skill Ventures">
+<div><h2>Keep Connected</h2><div class="foot-social"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/skillventures.sv?igsh=M3BwMGJlN2JtbHNt" aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/></svg></a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/162M9BS4Bq/" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg></a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/skill-ventures/?viewAsMember=true" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/><path d="M7.2 8.809H4V19.5h3.2V8.809Z"/></svg></a></div></div>
+<div class="foot-loc"><div><h3>Bangladesh</h3><p>House#112<br>Road#06<br>Mohakhali DOHS<br>Dhaka, Bangladesh</p></div><div><h3>Singapore</h3><p>151 Chin Swee Road,<br>#02-24 Manhattan House,<br>169876</p></div><div><h3>UAE</h3><p>Business Center<br>Sharjah Publishing City Free Zone,<br>United Arab Emirates</p></div><div><h3>USA</h3><p>2248 Broadway,<br>#1619 NY 10024,<br>New York</p></div></div></div></footer><script>(function(){function f(){document.querySelectorAll('video').forEach(function(v){v.muted=true;if(v.paused){var p=v.play();if(p)p.catch(function(){})}})}window.addEventListener('load',function(){setTimeout(f,300);setTimeout(f,1500)})})();</script><script>(function(){var st=document.querySelector('.j-stage'),steps=[].slice.call(document.querySelectorAll('.j-step')),dots=[].slice.call(document.querySelectorAll('.j-dot')),tag=document.querySelector('.tag'),
+tags=['Raw shot','Retouched','In motion','Effects added','3D visual','Inside the product','In the campaign'],cur=-1,timer=null,auto=true;
+function set(n){cur=(n+7)%7;st.setAttribute('data-s',cur);tag.textContent=tags[cur];steps.forEach(function(s,i){s.classList.toggle('on',i===cur)});dots.forEach(function(d,i){d.classList.toggle('on',i===cur)})}
+function start(){stop();if(auto)timer=setInterval(function(){set(cur+1)},3800)}function stop(){if(timer)clearInterval(timer);timer=null}
+dots.forEach(function(d,i){d.addEventListener('click',function(){auto=false;stop();set(i)})});
+var j=document.querySelector('.j');j.addEventListener('mouseenter',stop);j.addEventListener('mouseleave',start);
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){auto=false;stop();set(cur+1)}if(e.key==='ArrowLeft'){auto=false;stop();set(cur-1)}});
+set(0);start()})();</script></body></html>

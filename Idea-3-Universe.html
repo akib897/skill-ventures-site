@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Skill Ventures — Idea 3</title><link rel="icon" href="./uploads/_skill.ventures/public_html/favicon.ico" sizes="48x48" type="image/x-icon"><style>
+@font-face{font-family:Audiowide;font-style:normal;font-display:swap;font-weight:400;src:url(./uploads/_skill.ventures/public_html/_next/static/media/audiowide-latin-ext-400-normal.707dfaa2.woff2)format("woff2");unicode-range:U+100-2BA,U+2BD-2C5,U+2C7-2CC,U+2CE-2D7,U+2DD-2FF,U+304,U+308,U+329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:Audiowide;font-style:normal;font-display:swap;font-weight:400;src:url(./uploads/_skill.ventures/public_html/_next/static/media/audiowide-latin-400-normal.e0236b1a.woff2)format("woff2")}
+:root{--bg:#401444;--bg-deep:#2b0d2e;--bg-lift:#551b5e;--line:rgba(249,250,251,.28);--ink:#fff;--soft:#e3d3e6;--accent:#f2c6ff}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Audiowide,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.4}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul,ol{margin:0;padding:0}
+ul,ol{list-style:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.ph{display:flex;flex-direction:column;gap:6px;align-items:center;justify-content:center;text-align:center;width:100%;height:100%;min-height:160px;border:1px dashed var(--line);border-radius:10px;color:var(--soft);font-size:14px;padding:16px;background:repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 12px,transparent 12px 24px)}
+.ph-s{font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+/* logo strip */
+.strip{overflow:hidden;display:flex;padding:72px 0;border-top:1px solid var(--line)}
+.strip-row{display:flex;flex-shrink:0;align-items:center;animation:mq 22s linear infinite}
+.strip-row img{width:200px;height:120px;object-fit:contain;padding-right:80px}
+@keyframes mq{to{transform:translateX(-100%)}}
+/* footer */
+.foot{background:linear-gradient(to bottom,var(--bg-lift),var(--bg));padding:56px 0 64px}
+.foot-in{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:40px 32px;align-items:start}
+.foot-logo{width:150px}
+.foot h2{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin-bottom:14px}
+.foot-social{display:flex;gap:14px}
+.foot-social a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%}
+.foot-social a:hover{background:rgba(255,255,255,.1)}
+.foot-social svg{width:22px;height:22px}
+.foot-loc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(170px,100%),1fr));gap:24px;grid-column:span 2}
+.foot-loc h3{font-size:16px;margin-bottom:6px}
+.foot-loc p{font-size:12.5px;color:var(--soft);line-height:1.6}
+@media (max-width:640px){.foot-loc{grid-column:auto}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding-top:22px;padding-bottom:22px;flex-wrap:wrap}
+.bar img{width:112px}
+.bar p{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.note{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);text-align:center;padding:18px 24px 40px}
+.eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:14px;color:var(--bg);background:#fff;border:1px solid #fff;border-radius:999px;padding:12px 22px;min-height:44px;cursor:pointer}
+.btn.ghost{background:transparent;color:#fff;border-color:var(--line)}
+.btn.ghost:hover{border-color:#fff}
+
+.uni{position:relative;height:680px;overflow:hidden;background:radial-gradient(ellipse at 50% 55%,#5a1f63 0%,#2b0d2e 55%,#170619 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.uni canvas{position:absolute;inset:0;width:100%;height:100%}
+.ring{position:absolute;left:50%;top:52%;border:1px solid rgba(242,198,255,.28);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}
+.sun{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:170px;text-align:center;pointer-events:none;z-index:50}
+.sun::before{content:"";position:absolute;inset:-70px;border-radius:50%;background:radial-gradient(circle,rgba(242,198,255,.38),transparent 68%)}
+.sun img{position:relative;width:150px;margin:0 auto}
+.hint{position:absolute;left:0;right:0;bottom:22px;text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);pointer-events:none}
+.planet{position:absolute;left:0;top:0;display:flex;flex-direction:column;align-items:center;gap:10px;font:inherit;color:#fff;background:none;border:0;padding:0;cursor:pointer;will-change:transform}
+.p-face{display:block;width:118px;height:118px;border-radius:50%;overflow:hidden;border:1px solid rgba(255,255,255,.7);box-shadow:0 0 0 6px rgba(242,198,255,.12),0 18px 40px rgba(0,0,0,.5);transition:box-shadow .3s,transform .3s}
+.p-face img{width:100%;height:100%;object-fit:cover}
+.p-none{display:block;width:100%;height:100%;background:repeating-linear-gradient(135deg,rgba(255,255,255,.14) 0 8px,transparent 8px 16px),#3a1240}
+.p-name{font-size:13px;text-transform:uppercase;white-space:nowrap;text-shadow:0 2px 10px #000}
+.planet:hover .p-face,.planet:focus-visible .p-face{transform:scale(1.14);box-shadow:0 0 0 8px rgba(242,198,255,.3),0 0 60px rgba(242,198,255,.6)}
+.world{position:absolute;inset:0;z-index:100;clip-path:circle(0px at var(--ox,50%) var(--oy,50%));transition:clip-path .8s cubic-bezier(.3,.7,.2,1)}
+.world.on{clip-path:circle(150% at var(--ox,50%) var(--oy,50%))}
+.w-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.w-none{background:repeating-linear-gradient(135deg,rgba(255,255,255,.06) 0 14px,transparent 14px 28px),#2b0d2e}
+.w-shade{position:absolute;inset:0;background:linear-gradient(to right,rgba(43,13,46,.96) 0%,rgba(43,13,46,.8) 45%,rgba(43,13,46,.35) 100%)}
+.w-in{position:absolute;left:8%;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:16px;max-width:560px}
+.w-in h2{font-size:clamp(34px,5.4vw,72px);text-transform:uppercase;font-weight:400;line-height:1}
+.w-in ul{display:flex;flex-direction:column;gap:6px;font-size:17px;color:var(--soft)}
+.w-act{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+@media (max-width:700px){.uni{height:600px}.p-face{width:74px;height:74px}.p-name{font-size:10px}.sun{width:110px}.sun img{width:96px}}
+</style></head><body><header class="wrap bar"><img src="./uploads/_skill.ventures/public_html/logo.png" alt="Skill Ventures"><p>Your global partner in a dynamic digital landscape.</p></header><main><div class="uni"><canvas aria-hidden="true"></canvas><span class="ring r1"></span><span class="ring r2"></span><div class="sun"><img src="./uploads/_skill.ventures/public_html/logo.png" alt="Skill Ventures"></div>
+<button type="button" class="planet" data-i="0"><span class="p-face"><img src="./uploads/_skill.ventures/public_html/brands/skill-graphics/sk-1.jpg" alt=""></span><span class="p-name">Skill Graphics</span></button><button type="button" class="planet" data-i="1"><span class="p-face"><span class="p-none"></span></span><span class="p-name">Skill Videos</span></button><button type="button" class="planet" data-i="2"><span class="p-face"><img src="./uploads/_skill.ventures/public_html/brands/mvrk/mvrk-1.jpg" alt=""></span><span class="p-name">MVRK Studios</span></button><button type="button" class="planet" data-i="3"><span class="p-face"><img src="./uploads/_skill.ventures/public_html/brands/v2/v2-1.png" alt=""></span><span class="p-name">V2 Technologies</span></button><button type="button" class="planet" data-i="4"><span class="p-face"><img src="./uploads/_skill.ventures/public_html/brands/auleek/auleek-1.png" alt=""></span><span class="p-name">AULEEK</span></button><button type="button" class="planet" data-i="5"><span class="p-face"><img src="./uploads/_skill.ventures/public_html/brands/plus/plus-1.png" alt=""></span><span class="p-name">Plus Online Marketing</span></button><p class="hint">Six ventures in orbit. Choose one to fly in.</p><section class="world" data-i="0" hidden><img class="w-bg" src="./uploads/_skill.ventures/public_html/brands/skill-graphics/sk-1.jpg" alt=""><span class="w-shade"></span><div class="w-in"><p class="eyebrow">01 / 06</p><h2>Skill Graphics</h2><ul><li>Image Editing</li><li>Video Editing</li></ul>
+<div class="w-act"><a class="btn" href="https://skillgraphics.biz/" target="_blank" rel="noopener noreferrer">Enter site <span aria-hidden="true">→</span></a><button type="button" class="btn ghost w-back">Back to the group</button></div></div></section><section class="world" data-i="1" hidden><span class="w-bg w-none"></span><span class="w-shade"></span><div class="w-in"><p class="eyebrow">02 / 06</p><h2>Skill Videos</h2><ul><li>Video Editing</li><li>Post-Production</li></ul>
+<div class="w-act"><a class="btn" href="https://skillvideos.biz/" target="_blank" rel="noopener noreferrer">Enter site <span aria-hidden="true">→</span></a><button type="button" class="btn ghost w-back">Back to the group</button></div><p class="eyebrow">Visual to be added</p></div></section><section class="world" data-i="2" hidden><img class="w-bg" src="./uploads/_skill.ventures/public_html/brands/mvrk/mvrk-1.jpg" alt=""><span class="w-shade"></span><div class="w-in"><p class="eyebrow">03 / 06</p><h2>MVRK Studios</h2><ul><li>Visual Effects</li><li>Motion Graphics</li></ul>
+<div class="w-act"><a class="btn" href="https://mvrk.tv/" target="_blank" rel="noopener noreferrer">Enter site <span aria-hidden="true">→</span></a><button type="button" class="btn ghost w-back">Back to the group</button></div></div></section><section class="world" data-i="3" hidden><img class="w-bg" src="./uploads/_skill.ventures/public_html/brands/v2/v2-1.png" alt=""><span class="w-shade"></span><div class="w-in"><p class="eyebrow">04 / 06</p><h2>V2 Technologies</h2><ul><li>Customized Software Development</li><li>Data Analytics &amp; Visualization</li></ul>
+<div class="w-act"><a class="btn" href="https://v2.ltd/" target="_blank" rel="noopener noreferrer">Enter site <span aria-hidden="true">→</span></a><button type="button" class="btn ghost w-back">Back to the group</button></div></div></section><section class="world" data-i="4" hidden><img class="w-bg" src="./uploads/_skill.ventures/public_html/brands/auleek/auleek-1.png" alt=""><span class="w-shade"></span><div class="w-in"><p class="eyebrow">05 / 06</p><h2>AULEEK</h2><ul><li>Architectural &amp; Product Visualization</li><li>Data Analytics &amp; Visualization</li></ul>
+<div class="w-act"><a class="btn" href="https://auleek.com/" target="_blank" rel="noopener noreferrer">Enter site <span aria-hidden="true">→</span></a><button type="button" class="btn ghost w-back">Back to the group</button></div></div></section><section class="world" data-i="5" hidden><img class="w-bg" src="./uploads/_skill.ventures/public_html/brands/plus/plus-1.png" alt=""><span class="w-shade"></span><div class="w-in"><p class="eyebrow">06 / 06</p><h2>Plus Online Marketing</h2><ul><li>Search Engine Optimization</li><li>Content Marketing</li><li>Website Design &amp; Development</li><li>Performance Marketing</li></ul>
+<div class="w-act"><a class="btn" href="https://plusonlinemarketing.com/" target="_blank" rel="noopener noreferrer">Enter site <span aria-hidden="true">→</span></a><button type="button" class="btn ghost w-back">Back to the group</button></div></div></section></div></main><p class="note">Preview with stand-in visuals. The final version could be full 3D.</p><footer class="foot"><div class="wrap foot-in"><img class="foot-logo" src="./uploads/_skill.ventures/public_html/logo.png" alt="Skill Ventures">
+<div><h2>Keep Connected</h2><div class="foot-social"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/skillventures.sv?igsh=M3BwMGJlN2JtbHNt" aria-label="Instagram"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z" clip-rule="evenodd"/></svg></a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/share/162M9BS4Bq/" aria-label="Facebook"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/></svg></a>
+<a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/company/skill-ventures/?viewAsMember=true" aria-label="LinkedIn"><svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z" clip-rule="evenodd"/><path d="M7.2 8.809H4V19.5h3.2V8.809Z"/></svg></a></div></div>
+<div class="foot-loc"><div><h3>Bangladesh</h3><p>House#112<br>Road#06<br>Mohakhali DOHS<br>Dhaka, Bangladesh</p></div><div><h3>Singapore</h3><p>151 Chin Swee Road,<br>#02-24 Manhattan House,<br>169876</p></div><div><h3>UAE</h3><p>Business Center<br>Sharjah Publishing City Free Zone,<br>United Arab Emirates</p></div><div><h3>USA</h3><p>2248 Broadway,<br>#1619 NY 10024,<br>New York</p></div></div></div></footer><script>(function(){function f(){document.querySelectorAll('video').forEach(function(v){v.muted=true;if(v.paused){var p=v.play();if(p)p.catch(function(){})}})}window.addEventListener('load',function(){setTimeout(f,300);setTimeout(f,1500)})})();</script><script>(function(){var u=document.querySelector('.uni'),cv=u.querySelector('canvas'),ctx=cv.getContext('2d'),ps=[].slice.call(u.querySelectorAll('.planet')),ws=[].slice.call(u.querySelectorAll('.world')),r1=u.querySelector('.r1'),r2=u.querySelector('.r2');
+var W,H,stars=[],t=0,speed=1,target=1,mx=0,my=0,open=false,last=performance.now(),reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function size(){W=u.clientWidth;H=u.clientHeight;cv.width=W;cv.height=H;stars=[];for(var i=0;i<170;i++)stars.push([Math.random()*W,Math.random()*H,Math.random()*1.5+.3,Math.random()*6.28]);
+var rx=Math.min(W*.4,520),ry=W<700?Math.min(H*.3,220):rx*.42;r1.style.width=rx*2+'px';r1.style.height=ry*2+'px';r2.style.width=rx*1.36+'px';r2.style.height=ry*1.36+'px'}
+function frame(now){var dt=Math.min(50,now-last);last=now;speed+=(target-speed)*.06;if(!open&&!reduce)t+=dt*.00022*speed;
+ctx.clearRect(0,0,W,H);for(var i=0;i<stars.length;i++){var s=stars[i];ctx.globalAlpha=.35+.45*Math.abs(Math.sin(now*.0008+s[3]));ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(s[0]+mx*s[2]*6,s[1]+my*s[2]*6,s[2],0,6.28);ctx.fill()}
+var rx=Math.min(W*.4,520),ry=W<700?Math.min(H*.3,220):rx*.42,cx=W/2+mx*18,cy=H*.52+my*12;
+ps.forEach(function(p,i){var inner=i%2,a=t*(inner?1.25:1)+i*6.283/ps.length,k=inner?.68:1,x=cx+Math.cos(a)*rx*k,y=cy+Math.sin(a)*ry*k,d=(Math.sin(a)+1)/2,sc=.72+d*.48;
+p.style.transform='translate('+(x-p.offsetWidth/2)+'px,'+(y-p.offsetHeight/2+ (inner?0:-8))+'px) scale('+sc.toFixed(3)+')';p.style.zIndex=Math.round(10+d*80);p.style.opacity=(.6+d*.4).toFixed(2);p._x=x;p._y=y});
+requestAnimationFrame(frame)}
+u.addEventListener('pointermove',function(e){var r=u.getBoundingClientRect();mx=(e.clientX-r.left)/r.width-.5;my=(e.clientY-r.top)/r.height-.5});
+ps.forEach(function(p,i){p.addEventListener('mouseenter',function(){target=0});p.addEventListener('mouseleave',function(){target=1});p.addEventListener('focus',function(){target=0});p.addEventListener('blur',function(){target=1});
+p.addEventListener('click',function(){var w=ws[i];w.style.setProperty('--ox',p._x+'px');w.style.setProperty('--oy',p._y+'px');w.hidden=false;open=true;requestAnimationFrame(function(){requestAnimationFrame(function(){w.classList.add('on')})});setTimeout(function(){w.querySelector('.btn').focus()},500)})});
+function close(){ws.forEach(function(w,i){if(w.classList.contains('on')){w.classList.remove('on');setTimeout(function(){w.hidden=true},800);ps[i].focus()}});open=false;target=1}
+ws.forEach(function(w){w.querySelector('.w-back').addEventListener('click',close)});document.addEventListener('keydown',function(e){if(e.key==='Escape')close()});
+window.addEventListener('resize',size);size();requestAnimationFrame(frame)})();</script></body></html>

@@ -1,0 +1,136 @@
+{
+  "v": 1,
+  "mode": "omelette",
+  "root": "project/",
+  "title": "Skill.ventures website redesign",
+  "entry": "Universe.html",
+  "pages": [
+    {
+      "path": "Home.html",
+      "title": "Skill Ventures",
+      "kind": "plain",
+      "name": "Home"
+    },
+    {
+      "path": "Universe.html",
+      "title": "Skill Ventures — Universe",
+      "kind": "plain",
+      "name": "Universe · 3D"
+    },
+    {
+      "path": "Idea-1-One-Asset.html",
+      "title": "Skill Ventures — Idea 1",
+      "kind": "plain",
+      "name": "Idea 1 · One asset, six ventures"
+    },
+    {
+      "path": "Idea-2-Brief-Machine.html",
+      "title": "Skill Ventures — Idea 2",
+      "kind": "plain",
+      "name": "Idea 2 · The Brief Machine"
+    },
+    {
+      "path": "Idea-3-Universe.html",
+      "title": "Skill Ventures — Idea 3",
+      "kind": "plain",
+      "name": "Idea 3 · The Venture Universe"
+    },
+    {
+      "path": "Idea-4-Control-Room.html",
+      "title": "Skill Ventures — Idea 4",
+      "kind": "plain",
+      "name": "Idea 4 · The Control Room"
+    },
+    {
+      "path": "Idea-5-Reveal-Lens.html",
+      "title": "Skill Ventures — Idea 5",
+      "kind": "plain",
+      "name": "Idea 5 · The Reveal Lens"
+    },
+    {
+      "path": "Concept-A-Index.html",
+      "title": "Skill Ventures — Concept A",
+      "kind": "plain",
+      "name": "Concept A · Venture Index"
+    },
+    {
+      "path": "Concept-B-Doors.html",
+      "title": "Skill Ventures — Concept B",
+      "kind": "plain",
+      "name": "Concept B · Doors"
+    },
+    {
+      "path": "Concept-C-Finder.html",
+      "title": "Skill Ventures — Concept C",
+      "kind": "plain",
+      "name": "Concept C · Service Finder"
+    },
+    {
+      "path": "Home-original.html",
+      "title": "Skill Ventures",
+      "kind": "plain",
+      "name": "Home (original match)"
+    },
+    {
+      "path": "uploads/_skill.ventures/public_html/preview.html",
+      "title": "Skill Ventures",
+      "kind": "plain",
+      "name": "Home (previous copy)"
+    },
+    {
+      "path": "uploads/_skill.ventures/public_html/index.html",
+      "title": "Skill Ventures",
+      "kind": "plain",
+      "name": "Home (live build)"
+    },
+    {
+      "path": "uploads/_skill.ventures/public_html/404.html",
+      "title": "404: This page could not be found.",
+      "kind": "plain",
+      "name": "404"
+    },
+    {
+      "path": "uploads/_skill.ventures/public_html/404/index.html",
+      "title": "404: This page could not be found.",
+      "kind": "plain",
+      "name": "404 (folder)"
+    }
+  ],
+  "migratorVersion": "artifact-migrator (claude-design-backend ed667f7ac9c1)",
+  "createdAt": "2026-11-11T19:35:21.176Z",
+  "source": {
+    "v": 1,
+    "app": "claude-design",
+    "url": "https://claude.ai/design/p/c63ef6c7-36b5-4409-845b-830beea23d00",
+    "projectId": "c63ef6c7-36b5-4409-845b-830beea23d00",
+    "exportedAt": "2026-11-11T19:35:21.176Z"
+  },
+  "report": {
+    "itemsVersion": 2,
+    "pages": {
+      "total": 4,
+      "ok": 4,
+      "partial": 0,
+      "notMigrated": 0
+    },
+    "items": [
+      {
+        "kind": "external_blocked",
+        "path": "uploads/_skill.ventures/public_html/_next/static/chunks/80387516995bdf47-preview.js",
+        "text": "https://www.instagram.com/skillventures.sv?igsh=M3BwMGJlN2JtbHNt\nhttps://www.facebook.com/share/162M9BS4Bq/\nhttps://www.linkedin.com/company/skill-ventures/?viewAsMember=true"
+      },
+      {
+        "kind": "external_blocked",
+        "path": "uploads/_skill.ventures/public_html/_next/static/chunks/80387516995bdf47.js",
+        "text": "https://www.instagram.com/skillventures.sv?igsh=M3BwMGJlN2JtbHNt\nhttps://www.facebook.com/share/162M9BS4Bq/\nhttps://www.linkedin.com/company/skill-ventures/?viewAsMember=true"
+      },
+      {
+        "kind": "external_blocked",
+        "path": "uploads/_skill.ventures/public_html/_next/static/chunks/a6dad97d9634a72d.js",
+        "text": "https://a@b\nhttps://тест\nhttps://a#б\nhttps://x"
+      }
+    ],
+    "truncated": 0,
+    "truncatedLeftOut": 0
+  }
+}
